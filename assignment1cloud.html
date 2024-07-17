@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Saja Bakery Web Page</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white; 
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('tasty.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .navbar li {
+            float: left;
+        }
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.navbar li a:hover::after {
+    width: 100%; 
+}
+
+.navbar li a::after {
+    content: '';
+    display: block; 
+    height: 3px;
+    width: 0; 
+    background: #f5faf9; 
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    transition: width 0.5s ease; 
+}
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .content h1 {
+            font-size: 30px; 
+  
+        }
+        .content p{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+               
+                <li><a href="#Products">Our Products</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Welcome to Saja Bakery!</h1>
+            <p>Delighting your taste buds since 2024</p>
+            <section>
+                <h2>About Us</h2>
+                <p>Baking is our passion here at Saja Bakery.<br> We take great care and love in creating each delight, using only the best ingredients. Come taste some of our delicious homemade food.</p>
+            </section>
+        
+            <section>
+                <h2>Our Products</h2>
+                <ul>
+                    <li>Cakes</li>
+                    <li>Cookies</li>
+                    <li>Bread</li>
+                    <li>Pastries</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h2>Contact Us</h2>
+                <p>Visit us at: Al-Tireh Main Street, opposite Nelson Mandela Circle <br> Al-Tireh Center Building</p>
+                <p>Email: contact@sajabakery.com</p>
+                <p>Phone: (324) 787-5468</p>
+            </section>
+        
+</body>
+
+</html>
